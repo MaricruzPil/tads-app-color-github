@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(135deg, #f0f4ff, #e8f7f2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tarjeta principal */
+.rgb-card {
+    max-width: 900px;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.95),
+        rgba(240, 240, 240, 0.95)
+    );
+    transition: background 0.4s ease;
+}
+
+
+
+/* Recuadro del color */
+#colorBox {
+    width: 220px;
+    height: 220px;
+    border-radius: 30px;
+    border: 1px solid #b6b3b3;
+    transition: background-color 0.3s ease;
+}
+
+/* Caja de información */
+.info-box {
+    background-color: #f8f9fa;
+    font-size: 0.95rem;
+}
+
+/* Sliders personalizados */
+.range-red::-webkit-slider-thumb {
+    background: #dc3545;
+}
+.range-green::-webkit-slider-thumb {
+    background: #198754;
+}
+.range-blue::-webkit-slider-thumb {
+    background: #0d6efd;
+}
+
+/* Footer */
+.footer {
+    background-color: #97999b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
